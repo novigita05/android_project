@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win_10.utsipk.MainActivity">
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-72dp"
+        android:layout_above="@+id/judul"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/gambar" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:text="CALCULATOR IPK"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="8pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="111dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/textNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Nama" />
+
+            <TextView
+                android:id="@+id/textNIM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="NIM" />
+
+            <TextView
+                android:id="@+id/textJurusan"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Jurusan" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/inputNama"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:hint="@string/Nama"
+                android:textColor="@color/Grey"
+                android:textColorHint="@color/Grey"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/inputNIM"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:hint="@string/Nim"
+                android:inputType="number"
+                android:textColor="@color/Grey"
+                android:textColorHint="@color/Grey"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/jurusan"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"></Spinner>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="183dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/inputMatkul1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:hint="@string/Matkul"
+                android:textColor="@color/Grey"
+                android:textColorHint="@color/Grey" />
+
+            <EditText
+                android:id="@+id/inputMatkul2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:hint="@string/Matkul"
+                android:textColor="@color/Grey"
+                android:textColorHint="@color/Grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/inputSks1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:hint="@string/Sks"
+                android:inputType="number"
+                android:textColor="@color/Grey"
+                android:textColorHint="@color/Grey" />
+
+            <EditText
+                android:id="@+id/inputSks2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:hint="@string/Sks"
+                android:inputType="number"
+                android:textColor="@color/Grey"
+                android:textColorHint="@color/Grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/inputUts1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:hint="@string/Uts"
+                android:inputType="number"
+                android:textColor="@color/Grey"
+                android:textColorHint="@color/Grey" />
+
+            <EditText
+                android:id="@+id/inputUts2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:hint="@string/Uts"
+                android:inputType="number"
+                android:textColor="@color/Grey"
+                android:textColorHint="@color/Grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/inputUas1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:hint="@string/Uas"
+                android:inputType="number"
+                android:textColor="@color/Grey"
+                android:textColorHint="@color/Grey" />
+
+            <EditText
+                android:id="@+id/inputUas2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:hint="@string/Uas"
+                android:inputType="number"
+                android:textColor="@color/Grey"
+                android:textColorHint="@color/Grey" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="153dp"
+        android:textSize="15dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-156dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="-KHS-" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/footer"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hasilNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/hasilNim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:id="@+id/hasilJurusan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="96dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hasilMatkul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/hasilSKS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/hasilNilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="77dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hasilMatkul1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/hasilSks1"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/hasilAlpha1"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hasilMatkul2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/hasilSks2"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/hasilAlpha2"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/hasilIPK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/Green"/>
+    </LinearLayout>
+
+</RelativeLayout>

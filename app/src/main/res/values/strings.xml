@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UTSIPK</string>
+    <string name="Nama">Nama Mahasiswa</string>
+    <string name="Nim">NIM Mahasiswa</string>
+    <string name="Matkul">Mata Kuliah</string>
+    <string name="Sks">SKS</string>
+    <string name="Uts">Nilai UTS</string>
+    <string name="Uas">Nilai UAS</string>
+</resources>
